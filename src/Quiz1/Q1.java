@@ -38,11 +38,15 @@ public class Q1 {
         }
     }
     
+    //method to take in a string and reverse it
     public String reverseString(String word){
+        //if the length of the string is zero return nothing
         if(word.length() == 0){
             return "";
         }
-        String newWord = word.substring(0, word.length() - 1);
-        return word.charAt(word.length() - 1) + reverseString(newWord);
+        //if not
+        //return the last letter of the word 
+        //plus the reverseString call of the word minus the last letter
+        return word.charAt(word.length() - 1) + reverseString(word.substring(0, word.length() - 1));
     }
 }
