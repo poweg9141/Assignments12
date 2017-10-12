@@ -28,6 +28,7 @@ public class Q1 {
           "my",
           "test",
           "",
+          "12345",
         };
         
         //for loop to call the method for every word in the array
